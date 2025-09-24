@@ -100,12 +100,4 @@ def myplots(samples=10000):
 
 if __name__ == "__main__":
     samples = 10000
-    
-    # Check if command line argument provided
-    if len(sys.argv) > 1:
-        try:
-            samples = int(sys.argv[1])
-        except ValueError:
-            print(f"Invalid argument: {sys.argv[1]}. Using default samples={samples}")
-    
     myplots(samples)
